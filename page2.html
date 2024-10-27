@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/styles2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <link rel="icon" href="images/logo.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <title>Финтыч</title>
+</head>
+<body>
+   
+    <section class="second__page__logo">
+        <div class="centered-text">
+            <span class="word">Учись</span>
+            <span class="word">управлять</span>
+            <span class="word">финансами</span>
+            <span class="word">за</span>
+            <span class="word">15</span>
+            <span class="word">минут</span>
+            <span class="word">в</span>
+            <span class="word">день!</span>
+        </div>
+    </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const words = document.querySelectorAll('.word');
+            const lastWord = words[words.length - 1]; // Получаем последнее слово
+    
+            // Отслеживаем окончание анимации последнего слова
+            lastWord.addEventListener('animationend', function() {
+                // Пауза 1 секунда перед переходом
+                setTimeout(function() {
+                    // Переход на третью страницу
+                    window.location.href = 'page3.html'; // Замените на реальный путь третьей страницы
+                }, 1000); // 1000 мс = 1 секунда
+            });
+        });
+    </script>
+    
+    <main>
+        <img src="images/page__2.svg" alt="">
+    </main>
+</body>
+</html>

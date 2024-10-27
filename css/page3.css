@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.second__page__logo {
+    display: flex;
+    flex-direction: column; /* Устанавливаем вертикальное направление для элементов */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../images/Group 11.png'); /* Фон страницы */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+form {
+    display: flex; /* Выравнивание формы */
+    flex-direction: column; /* Устанавливаем вертикальное направление для полей */
+    align-items: flex-start; /* Центрируем элементы по горизонтали с выравниванием по левому краю */
+}
+
+input[type="text"],
+input[type="password"] {
+    border: none;
+    border-radius: 25px;
+    padding: 10px;
+    width: 250px; /* Ширина полей */
+    background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный фон */
+    margin: 5px 0; /* Убираем отступы между полями */
+}
+
+.login-container {
+    display: flex; /* Группируем кнопку и иконки */
+    justify-content: space-between; /* Размещаем кнопку и иконки по краям */
+    align-items: center; /* Центрируем по вертикали */
+    margin-top: 10px; /* Отступ сверху */
+    width: 100%; /* Устанавливаем ширину контейнера на 100% */
+}
+
+.login-button {
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    background-color: #007BFF; /* Цвет кнопки */
+    color: white;
+    width: 150px;
+    cursor: pointer;
+}
+
+.footer-text {
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center; /* Центрируем иконки по вертикали */
+}
+
+.social-icons img {
+    width: 30px; /* Размер иконок */
+    margin: 0 5px; /* Отступы между иконками */
+}

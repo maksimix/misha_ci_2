@@ -1,0 +1,60 @@
+.first__page__logo {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 100vh;
+    background-image: url('../images/Group 11.png'); /* Фон для всей секции */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+.centered-text {
+    color: white; /* Белый текст */
+    font-size: 24px; /* Размер шрифта */
+    font-weight: 600; /* Толщина шрифта */
+    text-align: center; /* Текст по центру */
+    padding: 20px; /* Отступы вокруг текста */
+    font-family: 'Montserrat', sans-serif; /* Шрифт Montserrat */
+}
+/* Анимация для появления первого изображения (logo.png) */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s ease forwards; /* Появление за 2 секунды */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Анимация для появления и вращения второго изображения (logo_text.png) */
+.rotate-horizontal {
+    opacity: 0; /* Сначала невидимо */
+    animation: fadeIn 1s ease forwards, rotateHorizontal 1s ease forwards; /* Появление и вращение */
+    animation-delay: 2s; /* Задержка в 2 секунды */
+}
+
+@keyframes rotateHorizontal {
+    0% {
+        transform: rotateX(0deg);
+    }
+    100% {
+        transform: rotateX(360deg); /* Полный оборот по оси X */
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
